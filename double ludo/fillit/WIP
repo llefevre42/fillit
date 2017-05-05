@@ -1,0 +1,10 @@
+FAIT
+
+OK			read input vers string
+			check format : 20char + \n
+			split des pieces vers string dans tableau de structure
+			check caracteres parasites
+			validite de la forme
+			identification de chaque piece (populate coordonnees dans la structure)
+
+			calcul des aires, 
