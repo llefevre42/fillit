@@ -6,7 +6,7 @@
 /*   By: thvocans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/02 19:19:40 by thvocans          #+#    #+#             */
-/*   Updated: 2017/05/03 18:20:38 by thvocans         ###   ########.fr       */
+/*   Updated: 2017/05/06 18:16:43 by llefevre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_struct_fill(t_tri *lst, char *coord)
 	i = 0;
 	j = 0;
 	neg = 1;
+	printf("%s\n", coord);
 	while (coord[i] != '\0')
 	{
 		if (coord[i] == '-')

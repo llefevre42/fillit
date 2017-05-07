@@ -6,7 +6,7 @@
 #    By: thvocans <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/23 19:03:58 by thvocans          #+#    #+#              #
-#    Updated: 2017/05/05 21:46:42 by llefevre         ###   ########.fr        #
+#    Updated: 2017/05/07 15:28:33 by llefevre         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 NAME = fillit
 
-FLAGS = -Wall -Wextra -Werror -Weverything
+FLAGS = -Wall -Wextra -Werror #-Weverything
 
 C_FOLDER = ./
 

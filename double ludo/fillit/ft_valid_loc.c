@@ -6,7 +6,7 @@
 /*   By: thvocans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/04 21:20:38 by thvocans          #+#    #+#             */
-/*   Updated: 2017/05/05 23:00:00 by llefevre         ###   ########.fr       */
+/*   Updated: 2017/05/07 14:51:20 by llefevre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ int		ft_valid_loc(t_tri *lst, int x, int y, int cote)
 	i = 0;
 	while (i < 8)
 	{
-		if (x + (*lst).coord[i + 1] < 0 || y + (*lst).coord[i] < 0 ||
-				x + (*lst).coord[i + 1] > cote || y + (*lst).coord[i] > cote)
+		if (y + (*lst).coord[i] < 0 || y + (*lst).coord[i] > cote - 1)
+			return(0);
+		i++;
+		if (x + (*lst).coord[i] < 0 || x + (*lst).coord[i] > cote - 1)
 			return (0);
-		i += 2;
+		i++;
 	}
 	return (1);
 }
